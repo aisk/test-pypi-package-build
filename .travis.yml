@@ -1,6 +1,6 @@
 env:
     global:
-        - PROJECT_SPEC="tornado==4.1.1"
+        - PROJECT_SPEC="tornado==4.2"
         # pip dependencies to _build_ your project
         - BUILD_DEPENDS=""
         # pip dependencies to _test_ your project.  Include any dependencies
