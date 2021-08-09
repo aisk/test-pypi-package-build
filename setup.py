@@ -16,5 +16,5 @@ setup(
         Extension("lunzi.lunzi", ["lunzi/lunzi.c"]),
     ],
     install_requires=[],
-    python_requires='>=3.8',
+    python_requires='>=3.6',
 )
