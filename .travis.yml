@@ -1,6 +1,6 @@
 env:
     global:
-        - PROJECT_SPEC="tornado==4.2"
+        - REPO_DIR=.
         # pip dependencies to _build_ your project
         - BUILD_DEPENDS=""
         # pip dependencies to _test_ your project.  Include any dependencies
@@ -57,8 +57,7 @@ before_install:
     - before_install
 
 install:
-    # Maybe get and clean and patch source
-    - build_index_wheel $PROJECT_SPEC
+    - build_wheel $REPO_DIR $PLAT
 
 script:
     - install_run $PLAT
