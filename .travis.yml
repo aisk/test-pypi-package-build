@@ -58,6 +58,7 @@ before_install:
     - before_install
 
 install:
+    - set -x
     - build_wheel $REPO_DIR $PLAT
 
 script:
