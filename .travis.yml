@@ -42,7 +42,7 @@ matrix:
     - os: linux
       env:
         - MB_PYTHON_VERSION=3.6
-        - PLAT=i686
+        - PLAT=x86_64
     - os: linux
       env:
         - MB_PYTHON_VERSION=pyston_2.3
@@ -58,6 +58,7 @@ before_install:
     - before_install
 
 install:
+    - set -x
     - build_wheel $REPO_DIR $PLAT
 
 script:
